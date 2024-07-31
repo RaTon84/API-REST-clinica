@@ -29,6 +29,5 @@ public record DatosRegistroMedico(
         @NotNull
         @Valid
         DatosDireccion direccion
-
 ) {
 }

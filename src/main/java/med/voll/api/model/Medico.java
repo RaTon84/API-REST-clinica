@@ -21,8 +21,10 @@ public class Medico {
     private String email;
     private String telefono;
     private String documento;
+
     @Enumerated(EnumType.STRING)
     private Especialidad especialidad;
+
     @Embedded
     private Direccion direccion;
 
@@ -33,5 +35,21 @@ public class Medico {
         this.especialidad = datosRegistroMedico.especialidad();
         this.direccion = new Direccion(datosRegistroMedico.direccion());
         this.telefono = datosRegistroMedico.telefono();
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public Especialidad getEspecialidad() {
+        return especialidad;
     }
 }
