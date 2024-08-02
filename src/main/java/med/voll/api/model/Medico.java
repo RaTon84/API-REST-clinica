@@ -21,6 +21,7 @@ public class Medico {
     private String email;
     private String telefono;
     private String documento;
+    private Boolean activo;
 
     @Enumerated(EnumType.STRING)
     private Especialidad especialidad;
@@ -29,6 +30,7 @@ public class Medico {
     private Direccion direccion;
 
     public Medico(DatosRegistroMedico datosRegistroMedico) {
+        this.activo = true;
         this.nombre = datosRegistroMedico.nombre();
         this.email = datosRegistroMedico.email();
         this.documento = datosRegistroMedico.documento();
@@ -37,6 +39,9 @@ public class Medico {
         this.telefono = datosRegistroMedico.telefono();
     }
 
+    public Long getId() {
+        return id;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -51,5 +56,21 @@ public class Medico {
 
     public Especialidad getEspecialidad() {
         return especialidad;
+    }
+
+    public void actualizarDatosMedico(DatosActualizarMedico datosActualizarMedico) {
+        if (datosActualizarMedico.nombre() != null){
+            this.nombre = datosActualizarMedico.nombre();
+        }
+        if (datosActualizarMedico.email() != null){
+            this.email = datosActualizarMedico.email();
+        }
+        if (datosActualizarMedico.telefono() != null){
+            this.telefono = datosActualizarMedico.telefono();
+        }
+    }
+
+    public void EliminarMedico() {
+        this.activo = false;
     }
 }
