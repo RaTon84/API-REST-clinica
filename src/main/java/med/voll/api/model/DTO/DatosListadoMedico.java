@@ -1,4 +1,6 @@
-package med.voll.api.model;
+package med.voll.api.model.DTO;
+
+import med.voll.api.model.Medico;
 
 public record DatosListadoMedico(
 

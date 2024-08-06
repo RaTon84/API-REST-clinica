@@ -1,4 +1,4 @@
-package med.voll.api.model;
+package med.voll.api.model.DTO;
 
 public record DatosRespuestaMedico(
         Long id,
@@ -6,6 +6,6 @@ public record DatosRespuestaMedico(
         String email,
         String telefono,
         String documento,
-        Especialidad Especialidad,
+        med.voll.api.model.Especialidad Especialidad,
         DatosDireccion direccion) {
 }
