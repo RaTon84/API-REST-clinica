@@ -50,6 +50,14 @@ public class Medico {
         return email;
     }
 
+    public String getDocumento() {
+        return documento;
+    }
+
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
     public String getTelefono() {
         return telefono;
     }
