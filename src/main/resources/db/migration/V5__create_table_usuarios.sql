@@ -1,0 +1,5 @@
+create table usuarios(
+	id serial PRIMARY key,
+	login varchar(100) not null,
+	clave varchar(300) not null
+);

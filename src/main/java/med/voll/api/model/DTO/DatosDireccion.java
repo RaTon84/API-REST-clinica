@@ -1,6 +1,8 @@
 package med.voll.api.model.DTO;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+
 
 public record DatosDireccion(
 
