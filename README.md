@@ -1,6 +1,5 @@
 #  API-REST JAVA-SpringBoot
 ## Clinica medica
-[TOC]
 
 #### Tecnologia/practicas usadas
 
