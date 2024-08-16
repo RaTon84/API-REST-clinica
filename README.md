@@ -51,7 +51,7 @@
   
   •	Liberar y restringir solicitudes, según la URL y el verbo del protocolo HTTP.
 
-  #### Dependencias usadas:
+#### Dependencias usadas:
   -  devtools
   -  lombok
   -  jpa
