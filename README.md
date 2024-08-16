@@ -1,7 +1,7 @@
 #  API-REST JAVA-SpringBoot
 ## Clinica medica
 
-#### Tecnologia/practicas usadas
+#### Tecnologia/practicas usadas:
 
 - •	Usar la clase ResponseEntity, de Spring, para personalizar los retornos de los métodos de una clase Controller
 
@@ -50,3 +50,13 @@
   •	Realizar el proceso de autenticación de la solicitud, utilizando la clase SecurityContextHolder de Spring.
   
   •	Liberar y restringir solicitudes, según la URL y el verbo del protocolo HTTP.
+
+  #### Dependencias usadas:
+  -  devtools
+  -  lombok
+  -  jpa
+  -  flyway
+  -  postgresql
+  -  validation
+  -  security
+  -  jwt
